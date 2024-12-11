@@ -6,15 +6,15 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:23:02 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 13:39:30 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 13:44:59 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int select_type(const char type, va_list args)
+int	select_type(const char type, va_list args)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (type == 'c')
@@ -34,7 +34,7 @@ int select_type(const char type, va_list args)
 	return (i);
 }
 
-int ft_printf(char const *str, ...)
+int	ft_printf(char const *str, ...)
 {
 	int		i;
 	int		c;
@@ -55,5 +55,5 @@ int ft_printf(char const *str, ...)
 		i++;
 	}
 	va_end(args);
-	return(c);	
+	return (c);
 }
