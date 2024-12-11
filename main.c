@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 14:04:01 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 14:32:16 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 15:00:06 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ int	main(void)
 	printf("ft_printf devolvió: %d, printf devolvió: %d\n", ret1, ret2);
 
 	// Prueba con hexadecimales
-	ret1 = ft_printf("Mi ft_printf: Hexadecimal minúsculas: %x\n", 255);
-	ret2 = printf("Origi printf: Hexadecimal minúsculas: %x\n", 255);
+	ret1 = ft_printf("Mi ft_printf: Hexadecimal minúsculas: %x\n", 250);
+	ret2 = printf("Origi printf: Hexadecimal minúsculas: %x\n", 250);
 	printf("ft_printf devolvió: %d, printf devolvió: %d\n", ret1, ret2);
 
 	ret1 = ft_printf("Mi ft_printf: Hexadecimal mayúsculas: %X\n", 255);

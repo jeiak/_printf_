@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:23:02 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 14:07:18 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 14:44:30 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,19 @@ static int	select_type(const char type, va_list args)
 
 	i = 0;
 	if (type == 'c')
-		i = i + ft_printfchar(va_arg(args, int));
+		i += ft_printfchar(va_arg(args, int));
 	else if (type == 's')
-		i = i + ft_printstr(va_arg(args, char *));
+		i += ft_printstr(va_arg(args, char *));
 	else if (type == 'd' || type == 'i')
-		i = i + ft_printnbr(va_arg(args, int));
+		i += ft_printnbr(va_arg(args, int));
 	else if (type == 'u')
-		i = i + ft_printunnbr(va_arg(args, unsigned int));
+		i += ft_printunnbr(va_arg(args, unsigned int));
 	else if (type == 'x' || type == 'p')
-		i = i + ft_printhex_low(va_arg(args, unsigned int));
+		i += ft_printhex_low(va_arg(args, unsigned int));
 	else if (type == 'X')
-		i = i + ft_printhex_up(va_arg(args, unsigned int));
+		i += ft_printhex_up(va_arg(args, unsigned int));
 	else if (type == '%')
-		i = i + ft_printfchar('%');
+		i += ft_printfchar('%');
 	return (i);
 }
 

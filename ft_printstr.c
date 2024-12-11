@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:41:47 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 13:59:55 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 14:41:02 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,8 @@
 
 int	ft_printfchar(char c)
 {
-	int	i;
-
-	i = 0;
 	write (1, &c, 1);
-	i++;
-	return (i);
+	return (1);
 }
 
 int	ft_printstr(char *s)

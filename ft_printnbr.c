@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:08:04 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 13:59:22 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 14:54:22 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	ft_printnbr(int n)
 		i++;
 	}
 	ft_printfchar((n % 10) + '0');
+	i++;
 	return (i);
 }
 
