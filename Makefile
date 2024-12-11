@@ -6,7 +6,7 @@
 #    By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/09 13:32:18 by jesssanc          #+#    #+#              #
-#    Updated: 2024/12/10 13:58:14 by jesssanc         ###   ########.fr        #
+#    Updated: 2024/12/11 13:46:49 by jesssanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ AR = ar rc
 SRCS =  ft.printf.c		\
 		ft_printnbr.c	\
 		ft_printstr.c	\
-		
+		ft_printhex.c
 OBJS = $(SRCS:.c=.o)
 BONUS_SRCS =
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
