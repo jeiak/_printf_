@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 09:21:23 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 13:45:45 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 14:33:37 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	ft_printhex_low(unsigned int num)
 		i++;
 	}
 	count = i;
-	while (i > 0)
+	while (i >= 0)
 	{
-		ft_putchar(&result[i]);
+		ft_printfchar(result[i]);
 		i--;
 	}
 	return (count);
@@ -58,9 +58,9 @@ int	ft_printhex_up(unsigned int num)
 		i++;
 	}
 	count = i;
-	while (i > 0)
+	while (i >= 0)
 	{
-		ft_putchar(&result[i]);
+		ft_printfchar(result[i]);
 		i--;
 	}
 	return (count);

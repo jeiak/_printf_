@@ -6,9 +6,11 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:41:47 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 12:44:47 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 13:59:55 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_printfchar(char c)
 {
@@ -32,7 +34,7 @@ int	ft_printstr(char *s)
 	}
 	while (s[i])
 	{
-		ft_printchar(s[i]);
+		ft_printfchar(s[i]);
 		i++;
 	}
 	return (i);
