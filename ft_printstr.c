@@ -6,14 +6,18 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:41:47 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/10 15:00:28 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 12:44:47 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_printfchar(char c)
 {
+	int	i;
+
+	i = 0;
 	write (1, &c, 1);
-	return (1);
+	i++;
+	return (i);
 }
 
 int	ft_printstr(char *s)

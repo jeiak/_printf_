@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:08:04 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/10 15:28:58 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/11 12:39:05 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,22 @@ int	ft_printnbr(int n)
 	if (n >= 10)
 	{
 		ft_printnbr(n / 10);
+		i++;
+	}
+	ft_printchar((n % 10) + '0');
+	return (i);
+}
+
+int	ft_printunnbr(unsigned int n)
+{
+	int		i;
+
+	i = 0;
+	if (n == 0)
+		return (ft_printchar('0'));
+	if (n >= 10)
+	{
+		ft_prinuntnbr(n / 10);
 		i++;
 	}
 	ft_printchar((n % 10) + '0');
