@@ -6,15 +6,15 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 09:21:23 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/12 09:35:40 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/12 10:02:43 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printhex_low(unsigned long long num)
+int	ft_printhex_low(unsigned long num)
 {
-	char	result[32];
+	char	result[16];
 	int		i;
 	int		count;
 
@@ -40,9 +40,9 @@ int	ft_printhex_low(unsigned long long num)
 	return (count);
 }
 
-int	ft_printhex_up(unsigned long long num)
+int	ft_printhex_up(unsigned long num)
 {
-	char	result[32];
+	char	result[16];
 	int		i;
 	int		count;
 
