@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 09:21:23 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/12 09:33:02 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/12 09:35:40 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_printhex_low(unsigned long long num)
 {
-	char	result[16];
+	char	result[32];
 	int		i;
 	int		count;
 
@@ -42,7 +42,7 @@ int	ft_printhex_low(unsigned long long num)
 
 int	ft_printhex_up(unsigned long long num)
 {
-	char	result[16];
+	char	result[32];
 	int		i;
 	int		count;
 
