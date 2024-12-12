@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 14:04:01 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/11 15:00:06 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/12 10:18:26 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,9 @@ int	main(void)
 	printf("ft_printf devolvió: %d, printf devolvió: %d\n", ret1, ret2);
 
 	// Prueba con punteros
-	int	x = 42;
-	ret1 = ft_printf("Mi ft_printf: Puntero: %p\n", &x);
-	ret2 = printf("Origi printf: Puntero: %p\n", &x);
+	int	a = 100;
+	ret1 = ft_printf("Mi ft_printf: Puntero: %p\n", NULL);
+	ret2 = printf("Origi printf: Puntero: %p\n", NULL);
 	printf("ft_printf devolvió: %d, printf devolvió: %d\n", ret1, ret2);
 
 	// Prueba con porcentaje

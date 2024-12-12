@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:23:02 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/12 09:33:22 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/12 11:36:20 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,11 @@ static int	select_type(const char type, va_list args)
 	else if (type == 'u')
 		i += ft_printunnbr(va_arg(args, unsigned int));
 	else if (type == 'x')
-		i += ft_printhex_low(va_arg(args, unsigned long long));
+		i += ft_printhex_low(va_arg(args, unsigned int));
 	else if (type == 'X')
-		i += ft_printhex_up(va_arg(args, unsigned long long));
+		i += ft_printhex_up(va_arg(args, unsigned int));
 	else if (type == 'p')
-	{
-		i += ft_printstr("0x");
-		i += ft_printhex_low(va_arg(args, unsigned long long));
-	}
+		i += ft_printptr(va_arg(args, unsigned long long));
 	else if (type == '%')
 		i += ft_printfchar('%');
 	return (i);
