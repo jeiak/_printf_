@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 14:04:01 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/12 11:56:14 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/13 09:26:00 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ int main()
     printf("ft_printf devolvió: %d, printf devolvió: %d\n", ret1, ret2);
 
     // Casos con valores negativos y cero
-    ret1 = ft_printf("Mi ft_printf: Entero negativo: %d, Cero: %d\n", -42, 0);
-    ret2 = printf("Origi printf: Entero negativo: %d, Cero: %d\n", -42, 0);
+    ret1 = ft_printf("Mi ft_printf: Entero negativo: %d, Positivo: %d\n", -2147483648, 2147483647);
+    ret2 = printf("Origi printf: Entero negativo: %d, Positivo: %d\n", -2147483648, 2147483647);
     printf("ft_printf devolvió: %d, printf devolvió: %d\n", ret1, ret2);
 
     // Casos de errores en cadenas de formato

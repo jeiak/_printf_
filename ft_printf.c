@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:23:02 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/12 11:36:20 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/13 09:27:46 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,11 @@ int	ft_printf(char const *str, ...)
 	while (str[i] != '\0')
 	{
 		if (str[i] != '%')
-			c = c + ft_printfchar(str[i]);
+			c += ft_printfchar(str[i]);
 		else
 		{
 			i++;
-			c = c + select_type(str[i], args);
+			c += select_type(str[i], args);
 		}
 		i++;
 	}
