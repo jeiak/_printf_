@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 13:33:25 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/12 11:37:17 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/16 11:05:21 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	ft_printunnbr(unsigned int n);
 int	ft_printhex_low(unsigned long num);
 int	ft_printhex_up(unsigned long num);
 int	ft_printptr(unsigned long ptr);
+int	ft_printf(char const *str, ...);
 
 #endif
