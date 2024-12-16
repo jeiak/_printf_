@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:23:02 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/13 09:27:46 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/16 09:52:09 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	select_type(const char type, va_list args)
 		i += ft_printhex_up(va_arg(args, unsigned int));
 	else if (type == 'p')
 		i += ft_printptr(va_arg(args, unsigned long long));
-	else if (type == '%')
+	else
 		i += ft_printfchar('%');
 	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: jesssanc <jesssanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:08:04 by jesssanc          #+#    #+#             */
-/*   Updated: 2024/12/13 10:05:25 by jesssanc         ###   ########.fr       */
+/*   Updated: 2024/12/16 09:52:45 by jesssanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_printnbr(int n)
 		i += ft_printstr("-2147483648");
 	else
 	{
-		if (n == 0 )
+		if (n == 0)
 			return (ft_printfchar('0'));
 		if (n < 0)
 		{
